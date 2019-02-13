@@ -1,5 +1,4 @@
 import os
-from Cython.Build import cythonize
 from setuptools import setup, Extension, find_packages
 
 
@@ -12,10 +11,12 @@ SRC_DIR = "math_round"
 REQUIRES = ['cython']
 
 ext = Extension(name=SRC_DIR + '.c_math_round', sources=[SRC_DIR + "/c_math_round.pyx"])
+EXTENSIONS = [ext]
+
 if __name__ == "__main__":
     setup(
         name='math-round',
-        version='0.0.2',
+        version='0.0.3.post1',
         description='Mathematical rounding for python 3',
         url='https://github.com/anisov/math-round',
         long_description=read('README.rst'),
@@ -32,6 +33,6 @@ if __name__ == "__main__":
             'Topic :: Software Development :: Libraries :: Python Modules',
         ],
         keywords=['math', 'round', 'math-round'],
-        ext_modules=cythonize(ext),
+        ext_modules=EXTENSIONS,
         install_requires=REQUIRES,
     )
