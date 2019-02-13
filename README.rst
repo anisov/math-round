@@ -16,9 +16,7 @@ Quick start
 
     mround(12.123) # - > 12
     mround(12.123, 1) # -> 12.1
-#. To replace the standard function - round () in the whole project, write the following in the main __init__ file:
-
-::
+#. To replace the standard function - round () in the whole project, write the following in the main __init__ file: ::
 
     import builtins
     from math_round import mround

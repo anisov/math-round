@@ -15,7 +15,7 @@ ext = Extension(name=SRC_DIR + '.c_math_round', sources=[SRC_DIR + "/c_math_roun
 if __name__ == "__main__":
     setup(
         name='math-round',
-        version='0.1',
+        version='0.0.2',
         description='Mathematical rounding for python 3',
         url='https://github.com/anisov/math-round',
         long_description=read('README.rst'),
@@ -24,9 +24,9 @@ if __name__ == "__main__":
         author='Anisov Dmitriy',
         author_email='dimaanisov24@gmail.com',
         classifiers=[
-            'DEVELOPMENT STATUS :: 3 - ALPHAClose',
+            'Development Status :: 3 - Alpha',
             'Intended Audience :: Developers',
-            'License :: MIT License',
+            'License :: OSI Approved :: MIT License',
             'Operating System :: OS Independent',
             'Programming Language :: Python :: 3',
             'Topic :: Software Development :: Libraries :: Python Modules',
