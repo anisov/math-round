@@ -8,7 +8,7 @@ def read(fname):
         return f.read()
 
 
-SRC_DIR = "math_round_source"
+SRC_DIR = "math_round"
 REQUIRES = ['cython']
 
 ext = Extension(name=SRC_DIR + '.c_math_round', sources=[SRC_DIR + "/c_math_round.pyx"])
